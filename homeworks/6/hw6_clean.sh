@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#Download dataset
+wget http://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/archives/fgvc-aircraft-2013b.tar.gz
+tar -xvf fgvc-aircraft-2013b.tar.gz
+
+cd fgvc-aircraft-2013b/data
+
 #Create train/val/test folders
 mkdir images/train
 mkdir images/val
